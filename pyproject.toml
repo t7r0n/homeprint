@@ -1,0 +1,30 @@
+[project]
+name = "homeprint"
+version = "0.1.0"
+description = "A one screen \"submit your address + last 12 months of PG&E bills, get a Manual J sized heat pump, a panel load verdict, and a binding price\""
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Tarun Aditya Kusupati" }
+]
+dependencies = []
+
+[project.scripts]
+homeprint = "homeprint.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.0",
+    "ruff>=0.15.0",
+]
+
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
