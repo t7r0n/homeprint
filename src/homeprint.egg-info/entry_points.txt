@@ -1,2 +1,0 @@
-[console_scripts]
-homeprint = homeprint.cli:main
