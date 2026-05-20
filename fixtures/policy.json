@@ -1,37 +1,37 @@
 {
-  "company": "Electric Air",
+  "company": "Homeprint",
   "repo": "homeprint",
   "metrics": [
-    "electric_coverage",
-    "button_risk",
-    "promises_precision",
-    "online_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "electric_drift",
-    "button_gap",
-    "promises_misroute",
-    "online_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "domain_archetypes": [
     {
-      "name": "electric evidence replay",
-      "trigger": "electric signal changes while button context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "button boundary probe",
-      "trigger": "button handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "promises regression harness",
-      "trigger": "promises behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "online operator packet",
-      "trigger": "online output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],

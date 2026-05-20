@@ -1,67 +1,57 @@
 {
   "repo": "homeprint",
-  "company": "Electric Air",
+  "company": "Homeprint",
   "rubric_axes": [
     {
-      "axis": "electric_coverage",
+      "axis": "evidence_coverage",
       "failures": [
-        "electric_drift"
+        "evidence_drift"
       ],
       "evidence_required": true
     },
     {
-      "axis": "button_risk",
+      "axis": "handoff_risk",
       "failures": [
-        "button_gap"
+        "handoff_gap"
       ],
       "evidence_required": true
     },
     {
-      "axis": "promises_precision",
+      "axis": "claim_precision",
       "failures": [
-        "promises_misroute"
+        "claim_misroute"
       ],
       "evidence_required": true
     },
     {
-      "axis": "online_latency",
+      "axis": "review_latency",
       "failures": [
-        "online_blindspot"
+        "review_blindspot"
       ],
       "evidence_required": true
     }
   ],
   "archetypes": [
     {
-      "name": "electric evidence replay",
-      "trigger": "electric signal changes while button context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "button boundary probe",
-      "trigger": "button handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "promises regression harness",
-      "trigger": "promises behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "online operator packet",
-      "trigger": "online output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources_used": [
-    "https://www.electricair.io/posts/stronger-together-electric-air-and-helios-climate",
-    "https://www.electricair.io/posts/push-button---get-heat-pump",
-    "https://www.electricair.io/discover",
-    "https://jobs.ashbyhq.com/electricair/0a246bea-18a2-4564-910c-2f39573a747e",
-    "https://www.ycombinator.com/companies/electric-air-2/jobs/0zeoBWa-senior-full-stack-engineer",
-    "https://www.ycombinator.com/launches/IBA-electric-air-tesla-for-heat-pumps",
-    "https://www.electricair.io/faq",
-    "https://linkedin.com/in/christophermui/",
-    "https://www.crunchbase.com/person/chris-mui-60b5"
-  ]
+  "sources_used": []
 }

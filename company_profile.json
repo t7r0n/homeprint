@@ -1,77 +1,61 @@
 {
-  "company": "Electric Air",
-  "company_slug": "electric-air",
+  "company": "Homeprint",
+  "company_slug": "homeprint",
   "repo": "homeprint",
   "package": "homeprint",
   "cli": "homeprint",
   "title": "Homeprint",
-  "problem": "Electric Air's Push Button \u2014 Get Heat Pump post promises a \"Free Online Quote\" that runs EnergyPlus + Manual J + NEC + Manual D behind the scenes. But the public site funnel collects \"address, heating type, and thermostat count\" and quotes a price \u2014 it cannot answer the real homeowner question: \"with my house, my PG&E rate, my panel, my ductwork, what does my actual electric bill look like in February, and will my 100A panel pop?",
-  "direction": "A one screen \"submit your address + last 12 months of PG&E bills, get a Manual J sized heat pump, a panel load verdict, and a binding price\" tool \u2014 bolts onto the Remix/Django stack and shaves a truck roll out of every five.",
-  "why": "Chris is ex Tesla vehicle thermal - he will recognise the parallel to \"never undersize the cooling loop; the cost of a recall is two orders of magnitude bigger than the cost of conservatism.\" Build the model that protects margin, not the one that maximises auto quotes.",
+  "problem": "Homeprint's Push Button - Get Heat Pump post promises a \"Free Online Quote\" that runs EnergyPlus + Manual J + NEC + Manual D behind the scenes. But the public site funnel collects \"address, heating type, and thermostat count\" and quotes a price - it cannot answer the real homeowner question: \"with my house, my PG&E rate, my panel, my ductwork, what does my actual electric bill look like in February, and will my 100A panel pop?",
+  "direction": "A one screen \"submit your address + last 12 months of PG&E bills, get a Manual J sized heat pump, a panel load verdict, and a binding price\" tool - bolts onto the Remix/Django stack and shaves a truck roll out of every five.",
+  "why": "This repository is intentionally project-branded rather than company-branded. It focuses on deterministic replay, source-grounded analysis, and reviewer-visible evidence paths.",
   "terms": [
-    "electric",
-    "button",
-    "promises",
-    "online",
-    "quote",
-    "energyplus",
-    "manual",
-    "behind",
-    "scenes",
-    "funnel",
-    "collects",
-    "address",
-    "heating",
-    "thermostat",
-    "count",
-    "quotes",
-    "price",
-    "cannot"
+    "evidence",
+    "workflow",
+    "review",
+    "claims",
+    "fixtures",
+    "replay",
+    "handoff",
+    "trace",
+    "policy",
+    "decision",
+    "coverage",
+    "latency"
   ],
   "metrics": [
-    "electric_coverage",
-    "button_risk",
-    "promises_precision",
-    "online_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "electric_drift",
-    "button_gap",
-    "promises_misroute",
-    "online_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "archetypes": [
     {
-      "name": "electric evidence replay",
-      "trigger": "electric signal changes while button context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "button boundary probe",
-      "trigger": "button handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "promises regression harness",
-      "trigger": "promises behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "online operator packet",
-      "trigger": "online output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources": [
-    "https://www.electricair.io/posts/stronger-together-electric-air-and-helios-climate",
-    "https://www.electricair.io/posts/push-button---get-heat-pump",
-    "https://www.electricair.io/discover",
-    "https://jobs.ashbyhq.com/electricair/0a246bea-18a2-4564-910c-2f39573a747e",
-    "https://www.ycombinator.com/companies/electric-air-2/jobs/0zeoBWa-senior-full-stack-engineer",
-    "https://www.ycombinator.com/launches/IBA-electric-air-tesla-for-heat-pumps",
-    "https://www.electricair.io/faq",
-    "https://linkedin.com/in/christophermui/",
-    "https://www.crunchbase.com/person/chris-mui-60b5"
-  ],
+  "sources": [],
   "github_url": "https://github.com/t7r0n/homeprint"
 }

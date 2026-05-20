@@ -1,7 +1,7 @@
 [project]
 name = "homeprint"
 version = "0.1.0"
-description = "A one screen \"submit your address + last 12 months of PG&E bills, get a Manual J sized heat pump, a panel load verdict, and a binding price\""
+description = "A one screen 'submit your address + last 12 months of PG&E bills, get a Manual J sized heat pump, a panel load verdict, "
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [

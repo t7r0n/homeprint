@@ -2,11 +2,11 @@
   "layers": [
     {
       "name": "fixture_replay",
-      "purpose": "exercise electric and button cases"
+      "purpose": "exercise evidence and workflow cases"
     },
     {
       "name": "strategy_model",
-      "purpose": "score electric_coverage and button_risk"
+      "purpose": "score evidence_coverage and handoff_risk"
     },
     {
       "name": "evidence_lock",
@@ -21,37 +21,37 @@
   "top_leverage_points": [
     {
       "rank": 1,
-      "scenario": "electric evidence replay",
-      "metric": "electric_coverage",
-      "failure_mode": "electric_drift",
-      "evidence": "ev_0000",
+      "scenario": "evidence replay",
+      "metric": "evidence_coverage",
+      "failure_mode": "evidence_drift",
+      "evidence": "ev_0044",
       "operator_action": "block release until cited evidence is regenerated",
       "severity": 2.611
     },
     {
       "rank": 2,
-      "scenario": "online operator packet",
-      "metric": "button_risk",
-      "failure_mode": "button_gap",
+      "scenario": "review operator packet",
+      "metric": "handoff_risk",
+      "failure_mode": "handoff_gap",
       "evidence": "ev_0055",
       "operator_action": "accept only if decision claims cite fixture evidence",
       "severity": 2.556
     },
     {
       "rank": 3,
-      "scenario": "promises regression harness",
-      "metric": "promises_precision",
-      "failure_mode": "promises_misroute",
-      "evidence": "ev_0066",
+      "scenario": "claim regression harness",
+      "metric": "claim_precision",
+      "failure_mode": "claim_misroute",
+      "evidence": "ev_0022",
       "operator_action": "open a regression issue with trace and benchmark delta",
       "severity": 2.528
     },
     {
       "rank": 4,
-      "scenario": "button boundary probe",
-      "metric": "online_latency",
-      "failure_mode": "online_blindspot",
-      "evidence": "ev_0033",
+      "scenario": "handoff boundary probe",
+      "metric": "review_latency",
+      "failure_mode": "review_blindspot",
+      "evidence": "ev_0121",
       "operator_action": "route to reviewer with evidence packet",
       "severity": 2.528
     }

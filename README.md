@@ -6,7 +6,7 @@ A one screen "submit your address + last 12 months of PG&E bills, get a Manual J
 
 ## Why it exists
 
-Electric Air's Push Button — Get Heat Pump post promises a "Free Online Quote" that runs EnergyPlus + Manual J + NEC + Manual D behind the scenes. But the public site funnel collects "address, heating type, and thermostat count" and quotes a price — it cannot answer the real homeowner question: "with my house, my PG&E rate, my panel, my ductwork, what.
+Homeprint's Push Button — Get Heat Pump post promises a "Free Online Quote" that runs EnergyPlus + Manual J + NEC + Manual D behind the scenes. But the public site funnel collects "address, heating type, and thermostat count" and quotes a price — it cannot answer the real homeowner question: "with my house, my PG&E rate, my panel, my ductwork, what.
 
 The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
@@ -52,18 +52,6 @@ uv run ruff check .
 - `outputs/decision_report.md`
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
-
-## Sources
-
-- https://www.electricair.io/posts/stronger-together-electric-air-and-helios-climate
-- https://www.electricair.io/posts/push-button---get-heat-pump
-- https://www.electricair.io/discover
-- https://jobs.ashbyhq.com/electricair/0a246bea-18a2-4564-910c-2f39573a747e
-- https://www.ycombinator.com/companies/electric-air-2/jobs/0zeoBWa-senior-full-stack-engineer
-- https://www.ycombinator.com/launches/IBA-electric-air-tesla-for-heat-pumps
-- https://www.electricair.io/faq
-- https://linkedin.com/in/christophermui/
-- https://www.crunchbase.com/person/chris-mui-60b5
 
 ## Boundary
 

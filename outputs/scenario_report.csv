@@ -1,5 +1,5 @@
 scenario,cases,blocks,reviews,mean_severity,mean_score,top_evidence_id,recommended_action
-button boundary probe,36,3,4,2.528,0.3916,ev_0033,route to reviewer with evidence packet
-electric evidence replay,36,4,5,2.611,0.4017,ev_0000,block release until cited evidence is regenerated
-online operator packet,36,4,5,2.556,0.3951,ev_0055,accept only if decision claims cite fixture evidence
-promises regression harness,36,3,5,2.528,0.3885,ev_0066,open a regression issue with trace and benchmark delta
+claim regression harness,36,3,5,2.528,0.4156,ev_0022,open a regression issue with trace and benchmark delta
+evidence replay,36,4,5,2.611,0.4141,ev_0044,block release until cited evidence is regenerated
+handoff boundary probe,36,3,4,2.528,0.3885,ev_0121,route to reviewer with evidence packet
+review operator packet,36,4,5,2.556,0.4183,ev_0055,accept only if decision claims cite fixture evidence
