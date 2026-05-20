@@ -1,6 +1,6 @@
 # Decision Report: Homeprint
 
-A one screen "submit your address + last 12 months of PG&E bills, get a Manual J sized heat pump, a panel load verdict, and a binding price" tool - bolts onto the Remix/Django stack and shaves a truck roll out of every five.
+A one screen "submit your address + last 12 months of PG&E bills, get a Manual J sized heat pump, a panel load verdict, and a binding price" tool — bolts onto the Remix/Django stack and shaves a truck roll out of every five.
 
 ## Evidence-Grounded Findings
 
