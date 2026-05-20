@@ -9,74 +9,54 @@
   },
   "clusters": [
     {
-      "scenario": "button gap",
-      "cases": 24,
+      "scenario": "button boundary probe",
+      "cases": 36,
       "blocks": 3,
-      "reviews": 2,
-      "mean_severity": 3.333,
-      "mean_score": 0.5225,
-      "top_evidence_id": "ev_0011",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "button reviewer handoff",
-      "cases": 24,
-      "blocks": 2,
       "reviews": 4,
-      "mean_severity": 2.583,
-      "mean_score": 0.4283,
-      "top_evidence_id": "ev_0055",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "electric drift",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 3,
-      "mean_severity": 2.5,
-      "mean_score": 0.3944,
-      "top_evidence_id": "ev_0022",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "electric evidence recall",
-      "cases": 24,
-      "blocks": 3,
-      "reviews": 3,
-      "mean_severity": 1.875,
-      "mean_score": 0.29,
-      "top_evidence_id": "ev_0132",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "online policy boundary",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 3,
-      "mean_severity": 1.708,
-      "mean_score": 0.2675,
+      "mean_severity": 2.528,
+      "mean_score": 0.3916,
       "top_evidence_id": "ev_0033",
-      "recommended_action": "block release until replay is understood"
+      "recommended_action": "route to reviewer with evidence packet"
     },
     {
-      "scenario": "promises failure replay",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 4,
-      "mean_severity": 3.333,
-      "mean_score": 0.5143,
-      "top_evidence_id": "ev_0044",
-      "recommended_action": "block release until replay is understood"
+      "scenario": "electric evidence replay",
+      "cases": 36,
+      "blocks": 4,
+      "reviews": 5,
+      "mean_severity": 2.611,
+      "mean_score": 0.4017,
+      "top_evidence_id": "ev_0000",
+      "recommended_action": "block release until cited evidence is regenerated"
+    },
+    {
+      "scenario": "online operator packet",
+      "cases": 36,
+      "blocks": 4,
+      "reviews": 5,
+      "mean_severity": 2.556,
+      "mean_score": 0.3951,
+      "top_evidence_id": "ev_0055",
+      "recommended_action": "accept only if decision claims cite fixture evidence"
+    },
+    {
+      "scenario": "promises regression harness",
+      "cases": 36,
+      "blocks": 3,
+      "reviews": 5,
+      "mean_severity": 2.528,
+      "mean_score": 0.3885,
+      "top_evidence_id": "ev_0066",
+      "recommended_action": "open a regression issue with trace and benchmark delta"
     }
   ],
   "highest_risk": {
-    "scenario": "button gap",
-    "cases": 24,
-    "blocks": 3,
-    "reviews": 2,
-    "mean_severity": 3.333,
-    "mean_score": 0.5225,
-    "top_evidence_id": "ev_0011",
-    "recommended_action": "block release until replay is understood"
+    "scenario": "electric evidence replay",
+    "cases": 36,
+    "blocks": 4,
+    "reviews": 5,
+    "mean_severity": 2.611,
+    "mean_score": 0.4017,
+    "top_evidence_id": "ev_0000",
+    "recommended_action": "block release until cited evidence is regenerated"
   }
 }

@@ -1,0 +1,67 @@
+{
+  "repo": "homeprint",
+  "company": "Electric Air",
+  "rubric_axes": [
+    {
+      "axis": "electric_coverage",
+      "failures": [
+        "electric_drift"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "button_risk",
+      "failures": [
+        "button_gap"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "promises_precision",
+      "failures": [
+        "promises_misroute"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "online_latency",
+      "failures": [
+        "online_blindspot"
+      ],
+      "evidence_required": true
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "electric evidence replay",
+      "trigger": "electric signal changes while button context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "button boundary probe",
+      "trigger": "button handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "promises regression harness",
+      "trigger": "promises behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "online operator packet",
+      "trigger": "online output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
+  ],
+  "sources_used": [
+    "https://www.electricair.io/posts/stronger-together-electric-air-and-helios-climate",
+    "https://www.electricair.io/posts/push-button---get-heat-pump",
+    "https://www.electricair.io/discover",
+    "https://jobs.ashbyhq.com/electricair/0a246bea-18a2-4564-910c-2f39573a747e",
+    "https://www.ycombinator.com/companies/electric-air-2/jobs/0zeoBWa-senior-full-stack-engineer",
+    "https://www.ycombinator.com/launches/IBA-electric-air-tesla-for-heat-pumps",
+    "https://www.electricair.io/faq",
+    "https://linkedin.com/in/christophermui/",
+    "https://www.crunchbase.com/person/chris-mui-60b5"
+  ]
+}
