@@ -1,0 +1,69 @@
+{
+  "company": "Electric Air",
+  "repo": "homeprint",
+  "terms": [
+    "electric",
+    "button",
+    "promises",
+    "online",
+    "quote",
+    "energyplus",
+    "manual",
+    "behind"
+  ],
+  "metrics": [
+    "electric_coverage",
+    "button_risk",
+    "promises_precision",
+    "online_latency"
+  ],
+  "failure_modes": [
+    "electric_drift",
+    "button_gap",
+    "promises_misroute",
+    "online_blindspot"
+  ],
+  "evidence_density": 18.75,
+  "pressure_index": 0.3167,
+  "blocked_share": 0.0972,
+  "review_share": 0.1319,
+  "top_leverage_points": [
+    {
+      "rank": 1,
+      "scenario": "electric evidence replay",
+      "metric": "electric_coverage",
+      "failure_mode": "electric_drift",
+      "evidence": "ev_0000",
+      "operator_action": "block release until cited evidence is regenerated",
+      "severity": 2.611
+    },
+    {
+      "rank": 2,
+      "scenario": "online operator packet",
+      "metric": "button_risk",
+      "failure_mode": "button_gap",
+      "evidence": "ev_0055",
+      "operator_action": "accept only if decision claims cite fixture evidence",
+      "severity": 2.556
+    },
+    {
+      "rank": 3,
+      "scenario": "promises regression harness",
+      "metric": "promises_precision",
+      "failure_mode": "promises_misroute",
+      "evidence": "ev_0066",
+      "operator_action": "open a regression issue with trace and benchmark delta",
+      "severity": 2.528
+    },
+    {
+      "rank": 4,
+      "scenario": "button boundary probe",
+      "metric": "online_latency",
+      "failure_mode": "online_blindspot",
+      "evidence": "ev_0033",
+      "operator_action": "route to reviewer with evidence packet",
+      "severity": 2.528
+    }
+  ],
+  "readout": "Electric Air gets a local, deterministic pressure test around electric, button, and promises. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action."
+}

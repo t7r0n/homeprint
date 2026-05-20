@@ -2,19 +2,39 @@
 
 A one screen "submit your address + last 12 months of PG&E bills, get a Manual J sized heat pump, a panel load verdict, and a binding price" tool - bolts onto the Remix/Django stack and shaves a truck roll out of every five.
 
-## Why This Exists
+![Homeprint working dashboard](outputs/project_working.svg)
 
-Electric Air's Push Button - Get Heat Pump post promises a "Free Online Quote" that runs EnergyPlus + Manual J + NEC + Manual D behind the scenes. But the public site funnel collects "address, heating type, and thermostat count" and quotes a price - it cannot answer the real homeowner question: "with my house, my PG&E rate, my panel, my ductwork, what does my actual electric bill look like in February, and will my 100A panel pop?
+## Why it exists
 
-## What It Builds
+Electric Air's Push Button - Get Heat Pump post promises a "Free Online Quote" that runs EnergyPlus + Manual J + NEC + Manual D behind the scenes.
 
-- Replays synthetic `electric` and `button` cases against the project's evidence rules.
-- Scores `electric_coverage`, `button_risk`, and `promises_precision` so regressions are visible in CSV and JSON.
-- Plants `electric drift` and `button gap` failures as negative controls.
-- Writes citation-locked decision claims; unsupported claims fail verification.
-- Exports a review dashboard and demo pack for `homeprint` without hosted services.
+Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
 
-## Local Run
+## What is inside
+
+- A deterministic replay harness tuned around electric, button, and promises.
+- Company-specific strategy code in `src/homeprint/strategy.py`, not just README-level customization.
+- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
+- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+
+![Homeprint evidence map](outputs/evidence_map.svg)
+
+## Signals it measures
+
+- `electric coverage`
+- `button risk`
+- `promises precision`
+- `online latency`
+
+## Failure modes it plants
+
+- electric drift
+- button gap
+- promises misroute
+- online blindspot
+
+## Run it locally
 
 ```bash
 uv sync
@@ -23,16 +43,14 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Outputs worth opening
 
-- `outputs/analysis.json`
-- `outputs/scenario_report.csv`
-- `outputs/decision_report.md`
-- `outputs/evidence_packet.md`
-- `outputs/domain_rubric.json`
-- `outputs/failure_matrix.md`
-- `outputs/trace_graph.mmd`
 - `outputs/dashboard.html`
+- `outputs/project_working.svg`
+- `outputs/evidence_map.svg`
+- `outputs/operator_brief.md`
+- `outputs/decision_report.md`
+- `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
 ## Sources
@@ -49,4 +67,4 @@ uv run ruff check .
 
 ## Boundary
 
-This repository uses synthetic fixtures only. It has no credentials, no customer data, no outreach data, and no dependency on a hosted API.
+Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.
