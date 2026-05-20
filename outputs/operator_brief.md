@@ -1,6 +1,6 @@
 # Operator Brief: Electric Air
 
-Electric Air gets a local, deterministic pressure test around electric, button, and promises. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action.
+Electric Air gets a local, deterministic pressure test around electric, button, and promises. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
